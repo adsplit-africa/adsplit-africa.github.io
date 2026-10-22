@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdSplit - Play, Listen & Earn Rewards</title>
+  <style>
+    :root {
+      --bg: #0A0D14;
+      --card-bg: #121824;
+      --border: #1E293B;
+      --primary: #10B981;
+      --primary-light: #34D399;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent: #F59E0B;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 16px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--primary-light);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #FFF 0%, var(--primary-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .card p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .links-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+    }
+    .links-box h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .links-box p {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #000;
+    }
+    .btn-primary:hover {
+      background: var(--primary-light);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary-light);
+    }
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      font-size: 13px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+    footer a {
+      color: var(--primary-light);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">OFFICIAL PORTAL</div>
+      <h1>AdSplit Rewards</h1>
+      <p class="subtitle">A transparent, dual-ledger reward sharing platform where users earn real rewards by watching ads, streaming audio, and playing casual games.</p>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🎮 Nut Sort 3D</h3>
+        <p>Solve engaging 3D color-sorting puzzles, unlock milestones, and claim verified bonus ad breaks.</p>
+      </div>
+      <div class="card">
+        <h3>🎵 Listen & Earn</h3>
+        <p>Enjoy live curated music radio streaming while earning rewards through periodic sponsored audio breaks.</p>
+      </div>
+      <div class="card">
+        <h3>🛡️ Verified Security</h3>
+        <p>All earnings are cryptographically audited with Google AdMob Server-Side Verification (SSV).</p>
+      </div>
+    </div>
+
+    <div class="links-box">
+      <h2>Legal & Transparency Documents</h2>
+      <p>Google Play Store compliance documents and official legal guidelines.</p>
+      <div class="btn-group">
+        <a href="about.html" class="btn btn-outline">About Us</a>
+        <a href="privacy.html" class="btn btn-primary">Privacy Policy</a>
+        <a href="terms.html" class="btn btn-outline">Terms of Service</a>
+        <a href="app-ads.txt" class="btn btn-outline">app-ads.txt</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 AdSplit Platform. All rights reserved.</p>
+      <p style="margin-top: 8px;">
+        <a href="about.html">About Us</a> &bull;
+        <a href="privacy.html">Privacy Policy</a> &bull;
+        <a href="terms.html">Terms of Service</a> &bull;
+        <a href="app-ads.txt">app-ads.txt</a> &bull;
+        <a href="mailto:mikemercy623@gmail.com?subject=AdSplit%20Support%20Inquiry">Support</a>
+      </p>
+      <p style="margin-top: 8px; font-size: 12px; color: var(--text-muted);">
+        Need help? Contact support directly at <a href="mailto:mikemercy623@gmail.com?subject=AdSplit%20Support%20Inquiry">mikemercy623@gmail.com</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
